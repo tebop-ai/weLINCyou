@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView items="{{ items }}" itemTap="onItemTap" class="list-group">
+    <ListView.itemTemplate>
+        <GridLayout columns="auto, *" rows="auto, auto" class="p-2 border-b border-gray-200">
+            <Image src="{{ imageUrl }}" width="80" height="80" class="rounded-lg" row="0" rowSpan="2" col="0" />
+            <StackLayout row="0" col="1" class="ml-2">
+                <Label text="{{ name }}" class="font-bold text-lg" />
+                <Label text="{{ 'R ' + estimatedValue }}" class="text-green-600" />
+            </StackLayout>
+            <Label text="{{ description }}" row="1" col="1" class="ml-2 text-gray-600" textWrap="true" />
+        </GridLayout>
+    </ListView.itemTemplate>
+</ListView>

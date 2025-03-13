@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Classes */
+.btn-primary {
+    background-color: #FF4500;
+    color: white;
+    font-weight: bold;
+    border-radius: 8;
+    padding: 12;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-width: 1;
+    border-color: #FF4500;
+    color: #FF4500;
+    border-radius: 8;
+    padding: 12;
+}
+
+.btn-text {
+    background-color: transparent;
+    color: #FF4500;
+    padding: 8;
+}
+
+.input {
+    padding: 12;
+    border-width: 1;
+    border-color: #d1d5db;
+    border-radius: 8;
+    placeholder-color: #9ca3af;
+}
+
+.landing-gradient {
+    background: linear-gradient(180deg, #FF4500 0%, #FF6347 100%);
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 12;
+    padding: 16;
+    margin: 8;
+    elevation: 3;
+}
+
+.platform-card {
+    background-color: white;
+    border-radius: 16;
+    padding: 20;
+    elevation: 3;
+}
+
+.active-card {
+    border-width: 2;
+    border-color: #FF4500;
+}
+
+.feature-mini-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12;
+    padding: 12;
+    margin: 4;
+}

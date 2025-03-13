@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="SwapShop SA" class="bg-green-600 text-white">
+        <ActionItem ios.position="right" android.position="actionBar">
+            <Label text="+" class="text-2xl p-2" tap="{{ onAddItem }}" />
+        </ActionItem>
+    </ActionBar>
+    
+    <TabView selectedTabTextColor="#22c55e">
+        <TabViewItem title="Browse">
+            <StackLayout>
+                <SearchBar hint="Search items..." class="mb-2" />
+                <include src="components/item-list/item-list.xml" />
+            </StackLayout>
+        </TabViewItem>
+        <TabViewItem title="My Items">
+            <StackLayout>
+                <Label text="Your listed items will appear here" class="text-center p-4 text-gray-500" />
+            </StackLayout>
+        </TabViewItem>
+        <TabViewItem title="Profile">
+            <StackLayout class="p-4">
+                <Label text="Profile" class="text-xl font-bold mb-4" />
+                <Label text="Username: JohnD" class="mb-2" />
+                <Label text="Location: Cape Town" class="mb-2" />
+                <Label text="Successful Swaps: 0" class="mb-2" />
+            </StackLayout>
+        </TabViewItem>
+    </TabView>
+</Page>

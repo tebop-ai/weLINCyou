@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      navigatingTo="onNavigatingTo"
+      loaded="onLoaded"
+      class="landing-gradient">
+    <ScrollView>
+        <StackLayout class="p-6">
+            <!-- Hero Section -->
+            <StackLayout class="text-center p-6">
+                <Label text="welinkyou" class="text-white font-bold text-5xl mb-2" />
+                <Label text="securely · reliably · fastest" class="text-white text-lg mb-8" />
+                <Label text="South Africa's Premier Item Swapping Community" textWrap="true" class="text-white text-xl mb-4" />
+            </StackLayout>
+
+            <!-- Feature Cards -->
+            <GridLayout rows="auto, auto" columns="*, *" class="mb-8">
+                <StackLayout class="feature-card" row="0" col="0">
+                    <Label text="🔒" class="text-3xl text-center" />
+                    <Label text="Secure Swaps" class="font-bold text-center" />
+                    <Label text="VeriLINC certified valuations" textWrap="true" class="text-center text-gray-600" />
+                </StackLayout>
+
+                <StackLayout class="feature-card" row="0" col="1">
+                    <Label text="🤝" class="text-3xl text-center" />
+                    <Label text="Trust System" class="font-bold text-center" />
+                    <Label text="Verified community members" textWrap="true" class="text-center text-gray-600" />
+                </StackLayout>
+
+                <StackLayout class="feature-card" row="1" col="0">
+                    <Label text="📦" class="text-3xl text-center" />
+                    <Label text="Easy Delivery" class="font-bold text-center" />
+                    <Label text="Integrated shipping options" textWrap="true" class="text-center text-gray-600" />
+                </StackLayout>
+
+                <StackLayout class="feature-card" row="1" col="1">
+                    <Label text="🎯" class="text-3xl text-center" />
+                    <Label text="Smart Matches" class="font-bold text-center" />
+                    <Label text="AI-powered swap suggestions" textWrap="true" class="text-center text-gray-600" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- CTA Buttons -->
+            <StackLayout class="mt-4">
+                <Button text="Get Started" tap="{{ onSignUp }}" class="btn-primary mb-4" />
+                <Button text="Already have an account? Log In" tap="{{ onLogin }}" class="btn-outline" />
+            </StackLayout>
+
+            <!-- Trust Indicators -->
+            <StackLayout class="mt-8">
+                <Label text="Trusted by South African Swappers" class="text-white text-lg text-center mb-2" />
+                <GridLayout columns="*, *, *" class="text-center">
+                    <StackLayout col="0">
+                        <Label text="10K+" class="text-white font-bold text-xl" />
+                        <Label text="Users" class="text-white" />
+                    </StackLayout>
+                    <StackLayout col="1">
+                        <Label text="50K+" class="text-white font-bold text-xl" />
+                        <Label text="Swaps" class="text-white" />
+                    </StackLayout>
+                    <StackLayout col="2">
+                        <Label text="4.9★" class="text-white font-bold text-xl" />
+                        <Label text="Rating" class="text-white" />
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

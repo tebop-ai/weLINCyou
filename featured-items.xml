@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout rows="auto" columns="*">
+    <ListView items="{{ featuredItems }}" height="200" scrollingEnabled="true" orientation="horizontal">
+        <ListView.itemTemplate>
+            <GridLayout rows="*, auto" columns="*" class="featured-item m-1">
+                <Image src="{{ imageUrl }}" stretch="aspectFill" row="0" />
+                <StackLayout row="1" class="p-2 bg-white">
+                    <Label text="{{ name }}" class="font-bold" />
+                    <Label text="{{ 'R ' + estimatedValue }}" class="text-green-600" />
+                </StackLayout>
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</GridLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      navigatingTo="onNavigatingTo"
+      class="landing-gradient">
+    <ScrollView>
+        <StackLayout class="p-6">
+            <!-- Logo and Header -->
+            <StackLayout class="text-center p-6">
+                <Label text="welinkyou" class="text-white font-bold text-5xl mb-2" />
+                <Label text="securely · reliably · fastest" class="text-white text-lg mb-4" />
+            </StackLayout>
+
+            <!-- Platform Selection Cards -->
+            <GridLayout rows="auto" columns="*, *" class="mb-8">
+                <StackLayout tap="{{ onBuySellTap }}" class="platform-card" row="0" col="0" margin="8">
+                    <Label text="💰" class="text-4xl text-center mb-2" />
+                    <Label text="Buy & Sell" class="text-xl font-bold text-center mb-2" />
+                    <Label text="Traditional marketplace for direct buying and selling" textWrap="true" class="text-center text-sm" />
+                    <Label text="Coming Soon" class="text-xs text-center mt-2 text-primary font-bold" />
+                </StackLayout>
+
+                <StackLayout tap="{{ onSwapTap }}" class="platform-card active-card" row="0" col="1" margin="8">
+                    <Label text="🔄" class="text-4xl text-center mb-2" />
+                    <Label text="Swap" class="text-xl font-bold text-center mb-2" />
+                    <Label text="Exchange items of equal value with our trusted community" textWrap="true" class="text-center text-sm" />
+                    <Button text="Get Started" tap="{{ onSwapTap }}" class="btn-primary mt-4" />
+                </StackLayout>
+            </GridLayout>
+
+            <!-- Why Choose Us -->
+            <StackLayout class="mt-8">
+                <Label text="Why Choose Us?" class="text-white text-xl font-bold text-center mb-4" />
+                <GridLayout rows="auto, auto" columns="*, *" class="mb-8">
+                    <StackLayout class="feature-mini-card" row="0" col="0">
+                        <Label text="🛡️" class="text-2xl text-center" />
+                        <Label text="Secure Platform" class="font-bold text-center" />
+                    </StackLayout>
+
+                    <StackLayout class="feature-mini-card" row="0" col="1">
+                        <Label text="🤝" class="text-2xl text-center" />
+                        <Label text="Active Community" class="font-bold text-center" />
+                    </StackLayout>
+
+                    <StackLayout class="feature-mini-card" row="1" col="0">
+                        <Label text="📱" class="text-2xl text-center" />
+                        <Label text="Easy to Use" class="font-bold text-center" />
+                    </StackLayout>
+
+                    <StackLayout class="feature-mini-card" row="1" col="1">
+                        <Label text="🌍" class="text-2xl text-center" />
+                        <Label text="South African Focus" class="font-bold text-center" />
+                    </StackLayout>
+                </GridLayout>
+            </StackLayout>
+
+            <!-- Trust Stats -->
+            <GridLayout columns="*, *, *" class="text-center mt-4">
+                <StackLayout col="0">
+                    <Label text="50K+" class="text-white font-bold text-xl" />
+                    <Label text="Users" class="text-white text-sm" />
+                </StackLayout>
+                <StackLayout col="1">
+                    <Label text="100K+" class="text-white font-bold text-xl" />
+                    <Label text="Transactions" class="text-white text-sm" />
+                </StackLayout>
+                <StackLayout col="2">
+                    <Label text="4.9★" class="text-white font-bold text-xl" />
+                    <Label text="Rating" class="text-white text-sm" />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

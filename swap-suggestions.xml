@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GridLayout rows="auto" columns="*">
+    <ListView items="{{ swapSuggestions }}" height="200">
+        <ListView.itemTemplate>
+            <GridLayout columns="auto, *, auto" rows="auto" class="p-2 border-b border-gray-200">
+                <Image src="{{ item1.imageUrl }}" width="60" height="60" class="rounded-lg" col="0" />
+                <Label text="↔️" class="text-2xl text-center" col="1" />
+                <Image src="{{ item2.imageUrl }}" width="60" height="60" class="rounded-lg" col="2" />
+            </GridLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</GridLayout>
